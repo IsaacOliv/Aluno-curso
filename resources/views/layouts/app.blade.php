@@ -27,7 +27,7 @@
                     <a class="nav-link" href="{{route('alunos.dashboard')}}">Alunos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Cursos</a>
+                    <a class="nav-link" href="{{route('cursos.dashboard')}}">Cursos</a>
                   </li>
                 </ul>
               </div>
