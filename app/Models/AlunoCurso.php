@@ -12,10 +12,10 @@ class AlunoCurso extends Model
     protected $fillable = ['id_aluno','id_curso'];
 
     public function alunos(){
-        return $this->hasMany(Alunos::class, 'id_aluno', 'id');
+        return $this->hasMany(Aluno::class, 'id', 'id_aluno');
     }
     public function curso(){
-        return $this->hasMany(Curso::class, 'id_curso', 'id');
+        return $this->hasMany(Curso::class, 'id', 'id_curso');
     }
 }
 

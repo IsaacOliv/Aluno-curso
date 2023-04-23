@@ -9,7 +9,7 @@
 </style>
 
 
-    <a class="btn btn-primary mt-3" href="{{route('cursos.create')}}">Cadastrar aluno</a>
+    <a class="btn btn-primary mt-3" href="{{route('cursos.create')}}">Criar Curso</a>
     <div class="text-center mb-3">
         <h1>Faculdade Pe de Valsa</h1>
     </div>
@@ -30,6 +30,9 @@
                     <td>{{$curso->turno}}</td>
                     <td>{{$curso->carga_horaria}}</td>
                     <td>
+                        <div>
+                            <a href="{{route('gerenciar', $curso->id)}}" class="btn btn-warning btn-acoes">Gerenciar</a>
+                        </div>
                         <div>
                             <a href="{{route('cursos.edit', $curso->id)}}" class="btn btn-primary btn-acoes">Editar</a>
                         </div>
